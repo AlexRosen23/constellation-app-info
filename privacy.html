@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Constellation privacy policy</title>
+  <meta name="description" content="How Constellation uses Google user data.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <p class="crumb"><a href="./">Constellation</a></p>
+    <h1>Privacy policy</h1>
+    <p class="lede">Effective October 21, 2026.</p>
+    <p>Constellation is a personal app used only by its owner, on the owner's own Mac. This page explains what it does with Google user data.</p>
+
+    <h2>Google data it uses</h2>
+    <p>Constellation asks Google for these permissions, and no others:</p>
+    <table>
+      <thead><tr><th>Permission (scope)</th><th>Why</th></tr></thead>
+      <tbody>
+        <tr><td><code>openid</code>, <code>email</code></td><td>To show which Google account is connected.</td></tr>
+        <tr><td><code>gmail.readonly</code></td><td>To show the owner's own mail, read only: counts of unread and important mail from today, search results, and a conversation shown as plain text.</td></tr>
+        <tr><td><code>calendar.events</code></td><td>To show the owner's events. Also to add, change or delete an event on a calendar the owner owns, but only after the owner sees a preview and confirms that exact change. No invitations or update emails are sent.</td></tr>
+        <tr><td><code>calendar.calendarlist.readonly</code></td><td>To list the owner's calendars so they can choose which ones to show.</td></tr>
+      </tbody>
+    </table>
+    <p>Constellation never sends, drafts, deletes, labels or otherwise changes email.</p>
+
+    <h2>How the data is handled</h2>
+    <ul>
+      <li><strong>Read live, not stored.</strong> Mail and calendar content is fetched from Google when the owner looks at it, and kept briefly in the app's memory to avoid repeat requests. It isn't written to a database, file, log or backup.</li>
+      <li><strong>One exception:</strong> when the owner asks Constellation's voice assistant what's on their calendar, the spoken answer goes through a temporary audio file that is deleted as soon as it has played. Email is never read aloud.</li>
+      <li><strong>Credentials:</strong> the sign-in tokens and the app's Google client credentials are stored only in the macOS Keychain on the owner's Mac. The short-lived access token is kept in memory only.</li>
+      <li><strong>Stays on the Mac:</strong> Google data never leaves the owner's Mac except in the requests to Google itself.</li>
+      <li><strong>Not shared, not sold, not used for ads.</strong> Google data isn't sent to any third party and isn't used to train AI models. Email content is never passed to the AI assistants inside Constellation.</li>
+    </ul>
+
+    <h2>Google API Services User Data Policy</h2>
+    <p>Constellation's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+    <h2>Removing access</h2>
+    <p>The owner can disconnect at any time:</p>
+    <ul>
+      <li>with Constellation's <code>google:disconnect</code> command, which revokes the access at Google and deletes the stored credentials from the Keychain; or</li>
+      <li>in their Google Account, under <a href="https://myaccount.google.com/permissions">Third-party apps &amp; services</a>.</li>
+    </ul>
+    <p>Because no mail or calendar content is stored, disconnecting leaves no Google data behind.</p>
+
+    <h2>Changes</h2>
+    <p>This policy is updated before Constellation starts using any other Google data. The history of every change is public in <a href="https://github.com/AlexRosen23/constellation-app-info/commits/main/privacy.html">this site's repository</a>.</p>
+
+    <h2>Contact</h2>
+    <p>Open an issue in <a href="https://github.com/AlexRosen23/constellation-app-info/issues">this site's GitHub repository</a>.</p>
+  </main>
+</body>
+</html>
