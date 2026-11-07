@@ -29,7 +29,7 @@ The pages are plain HTML and CSS with no build step and no scripts. GitHub Pages
 
 ## Built with
 
-Hand-sized static HTML and CSS, written with Claude Code as an AI pair programmer under Alex's direction and review.
+Static HTML and CSS, written with Claude Code as an AI pair programmer under Alex's direction and review.
 
 ## Run it locally
 
