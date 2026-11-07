@@ -6,7 +6,7 @@ The public homepage and privacy policy for Constellation's Google sign-in, which
 
 ## What it does
 
-Constellation is Alex's personal 3D command center for his own projects. It runs only on his own Mac. To connect his Google account it needs a public page that describes the app and a public privacy policy; this repository is those two pages.
+Constellation is Alex's personal 3D command center for Alex's own projects, and it runs only on Alex's own Mac. To connect a Google account, it needs a public page that describes the app and a public privacy policy; this repository is those two pages.
 
 - **Homepage:** https://alexrosen23.github.io/constellation-app-info/
 - **Privacy policy:** https://alexrosen23.github.io/constellation-app-info/privacy.html
