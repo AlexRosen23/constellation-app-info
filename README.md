@@ -96,6 +96,26 @@ flowchart LR
 The pages and the policy were written by Claude Code under the owner's direction and review, from the code of the
 Google integration rather than from a template.
 
+## Results and evidence
+
+There are no metrics to report for two static pages beyond the checks in [What works today](#what-works-today).
+
+<details>
+<summary>Build effort (measured 2026-11-07, not re-measured for this README)</summary>
+
+| | |
+|---|---|
+| Commits on `main` before this PR | 5 (the 2026-10-21 initial commit, then PR #1) |
+| Active Claude Code time | 0.2 hours across 5 sessions (2026-11-02 → 2026-11-07) |
+| Claude tokens (new work) | 130 thousand: 72 input, 105 thousand written to cache, 24 thousand output |
+| Claude tokens (cache reads) | 7.8 million, counted separately |
+| Models (share of responses) | Claude Opus 5.5 91%, Claude Sonnet 5.5 9% |
+
+Measured from Claude Code session transcripts with a small read-only script; each response's `usage` record is counted
+once, and active time merges overlapping intervals of transcript events at most 15 minutes apart. Approximate.
+
+</details>
+
 ## Limitations and what's next
 
 - **Not connected yet.** The Constellation's Gmail and Calendar features are "built, not connected" until the owner
