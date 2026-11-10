@@ -16,7 +16,7 @@ anyone who wants to know exactly what the app does with a connected Google accou
 | **Status** | Working: both pages are live on GitHub Pages. The Google integration they describe is built but not connected yet. |
 | **Stack** | Plain HTML and CSS: no build step, no scripts, no trackers, no external assets |
 | **Run it** | open `index.html` in a browser |
-| **Verified** | 2026-11-09 against `main` at `e7c24e5`, and the scopes against The Constellation's `main` at `a991626a` ([how](#what-works-today)) |
+| **Verified** | 2026-11-10 against `main` at `aef11c3`, and the scopes against The Constellation's `main` at `32e9343b` ([how](#what-works-today)) |
 
 ## Why this exists
 
@@ -54,8 +54,8 @@ done, because Gmail read access is personal data and the owner should be able to
 
 | capability | status | how it was verified |
 |---|---|---|
-| Homepage and privacy policy served by GitHub Pages from `main` | Working | both URLs returned HTTP 200 on 2026-11-09; the last Pages build (2026-11-07) succeeded |
-| Scopes listed in the policy match the code | Working | compared on 2026-11-09 with `SCOPES` and `FORBIDDEN_SCOPES` in The Constellation's `server/google/oauth.ts` (`main` at `a991626a`) |
+| Homepage and privacy policy served by GitHub Pages from `main` | Working | both URLs returned HTTP 200 on 2026-11-10; the Pages build for `aef11c3` (2026-11-10) succeeded |
+| Scopes listed in the policy match the code | Working | compared on 2026-11-10 with `SCOPES` and `FORBIDDEN_SCOPES` in The Constellation's `server/google/oauth.ts` (`main` at `32e9343b`) |
 | "Email content is never passed to the AI assistants" | Matches the code | The Constellation's voice assistant's brain is never given mail or calendar (`NOT_GIVEN` in `server/jarvis/brain.ts`); calendar and mail questions are answered locally |
 | Light and dark themes | Working | `prefers-color-scheme` in `style.css` |
 | The Google connection itself (in The Constellation) | Built, not connected | The Constellation's features list (§6.2) records Gmail and Calendar as "built, not connected". Whether the consent screen has been published isn't recorded in either repository |
@@ -91,7 +91,7 @@ flowchart LR
 |---|---|---|
 | 2026-10-21 | both pages, written the same day as The Constellation's Gmail and Calendar connection (its PR #50, merged 2026-10-21) and its setup guide's Branding step | initial commit `e4bbeed` |
 | 2026-11-07 | README rewritten with an overview and build stats | [PR #1](https://github.com/AlexRosen23/constellation-app-info/pull/1) |
-| 2026-11-09 | this write-up | PR `docs/readme-writeup` |
+| 2026-11-10 | this write-up, merged on the owner's OK | [PR #2](https://github.com/AlexRosen23/constellation-app-info/pull/2) (`aef11c3`) |
 
 The pages and the policy were written by Claude Code under the owner's direction and review, from the code of the
 Google integration rather than from a template.
