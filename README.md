@@ -1,10 +1,25 @@
 # constellation-app-info
 
-The public homepage and privacy policy for the Google sign-in of
-[The Constellation](https://github.com/AlexRosen23/constellation), a personal 3D command center that runs only on its
-owner's Mac. Google won't publish an OAuth app's consent screen without a public homepage and a public privacy
-policy, and The Constellation's own repository is private, so these two pages live here. They are for Google and for
-anyone who wants to know exactly what the app does with a connected Google account.
+**The public homepage and privacy policy for the Google sign-in of [The Constellation](https://github.com/AlexRosen23/constellation), a personal 3D command center that runs only on its owner's computer.**
+
+## What it does
+
+- Provides the two public web pages Google requires before it will publish an OAuth app's consent screen: a homepage and a privacy policy.
+- The homepage says what The Constellation is and the three things it can do with a connected Google account (read Gmail, read Calendar, add or change a calendar event after a preview and confirmation).
+- The privacy policy lists exactly the Google scopes requested (`openid`, `email`, `gmail.readonly`, `calendar.events`, `calendar.calendarlist.readonly`), how data is handled (read live, not stored, never shared, sold or used to train models) and how to remove access.
+- Plain HTML and CSS only: no scripts, no trackers, no external assets.
+
+## Who it is for
+
+Google's consent-screen review, and anyone who wants to know exactly what the app does with a connected Google account. The app's own repository is private, and GitHub Pages is not available for private repositories on a free plan, so these two pages live in this small public repository.
+
+## How it works
+
+The `main` branch is served as-is by GitHub Pages. The policy is meant to match the scope list in the private app's code, and is updated here first, in public history, before the app uses any new Google data.
+
+## Try it
+
+Open the live pages below, or open `index.html` in a browser (nothing to install or build).
 
 - **Homepage:** https://alexrosen23.github.io/constellation-app-info/
 - **Privacy policy:** https://alexrosen23.github.io/constellation-app-info/privacy.html
@@ -60,7 +75,7 @@ done, because Gmail read access is personal data and the owner should be able to
 | Light and dark themes | Working | `prefers-color-scheme` in `style.css` |
 | The Google connection itself (in The Constellation) | Built, not connected | The Constellation's features list (§6.2) records Gmail and Calendar as "built, not connected". Whether the consent screen has been published isn't recorded in either repository |
 
-## Quick start
+## Quick start (preview locally)
 
 Open `index.html` in a browser. There is nothing to install or build. To preview it over HTTP, as GitHub Pages serves
 it (checked 2026-11-09: both pages and the stylesheet return 200):
@@ -145,3 +160,4 @@ changes; the repository has no workflow files of its own.
 - [The Constellation](https://github.com/AlexRosen23/constellation) (private repository): the app these pages describe
 - [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy)
 - Questions or concerns: open an issue in this repository
+- Feature list: [FEATURES.md](FEATURES.md)
