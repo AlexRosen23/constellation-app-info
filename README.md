@@ -1,5 +1,7 @@
 # constellation-app-info
 
+**Constellation sign-in homepage**
+
 **The public homepage and privacy policy for the Google sign-in of [The Constellation](https://github.com/AlexRosen23/constellation), a personal 3D command center that runs only on its owner's computer.**
 
 ## What it does
